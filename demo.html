@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function DOG(name){
+			this.name=name;
+			this.age=17;
+		}
+
+		DOG.prototype={spec:'犬科',
+					   bite:function(who){
+					   		alert(who+' , wang wang wang!');
+					   }
+		};
+
+
+		var dg1=new DOG('大毛');
+		var dg2=new DOG('二毛');
+
+		//DOG.prototype.spec='猫科';
+		//dg1.prototype.spec='猫科';
+		alert(dg1.name);
+		alert(dg1.spec);
+		alert(dg2.name);
+		alert(dg2.spec);
+		dg1.bite('neotv');
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
